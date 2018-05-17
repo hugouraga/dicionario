@@ -17,3 +17,10 @@ class dicionario:
             aux = No(chave, valor, None)
         else:
             aux.valor = valor
+    def pesquisa(chave):
+        referencia = self.primeiro.proximo
+        while not referencia in None and referencia.chave != chave:
+            referencia = referencia.proximo
+        if referencia in Non:
+            return raise KeyError(chave)
+        return referencia.valor
