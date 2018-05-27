@@ -11,7 +11,7 @@ class dicionario:
         return self.primeiro == self.ultimo
     def inserir(chave,valor):
         aux = self.primeiro.proximo
-        while not aux in None and aux.chave != chave:
+        while not aux is None and aux.chave != chave:
             aux = aux.proximo
         if aux is None:
             aux = No(chave, valor, None)
